@@ -81,7 +81,7 @@ def fetch_realtime(codes):
             raw = {group[0]: raw}
 
         for code, info in raw.items():
-            if not info or not info.get("success"):
+            if not isinstance(info, dict) or not info.get("success"):
                 continue
             try:
                 rt = info["realtime"]
