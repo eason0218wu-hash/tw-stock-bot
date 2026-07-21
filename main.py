@@ -25,7 +25,7 @@ import requests
 import twstock
 
 # ------------- 參數設定 -------------
-PCT_THRESHOLD = -100       # 漲幅門檻 (%)
+PCT_THRESHOLD = 8.5      # 漲幅門檻 (%)
 MA_DAYS = 5                 # 均線天數
 TOP_N = 30                  # 成交量排行取前幾名
 WATCHLIST_FILE = "watchlist.txt"
